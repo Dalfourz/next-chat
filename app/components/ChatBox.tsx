@@ -1,5 +1,5 @@
 import { db } from "@/firebase"
-import { QuerySnapshot, collection, limit, onSnapshot, orderBy, query } from "firebase/firestore"
+import { collection, limit, onSnapshot, orderBy, query } from "firebase/firestore"
 import { useEffect, useRef, useState } from "react"
 import SendMessage from "./SendMessage"
 import Message from "./Message"
@@ -7,6 +7,7 @@ import { Unsubscribe } from "firebase/auth"
 
 interface MessageData {
   id: string;
+  uid: string;
   text: string;
   name: string;
   avatar: string;
@@ -44,11 +45,11 @@ export default function ChatBox() {
     <>
       <div>
         {messages?.map((message) => (
-          <Message key={messages.id} message={message}/>
+          <Message key={message.id} message={message}/>
         ))}
       </div>
       <span ref={scroll}></span>
-      <SendMessage scroll={scroll}/>
+      <SendMessage />
     </>
   )
 }
