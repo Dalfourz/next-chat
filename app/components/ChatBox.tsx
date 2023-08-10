@@ -8,6 +8,7 @@ import { Unsubscribe } from "firebase/auth"
 interface MessageData {
   id: string;
   uid: string;
+  user: string;
   text: string;
   name: string;
   avatar: string;
