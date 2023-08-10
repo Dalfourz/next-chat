@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <nav className="flex justify-between p-4 bg-green-300 sticky top-0">
-      <h1>Next Chat</h1>
+      <h1 className="flex items-center">Next Chat</h1>
       {user ? (
         <button onClick={signOut} className="sign-out" type="button">
           Sign Out

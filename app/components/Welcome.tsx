@@ -10,13 +10,20 @@ export default function Welcome() {
   };
 
   return (
-    <div className="text-center">
-      <h2 className="p-2">Welcome to Next Chat</h2>
-      <img src="" alt="" />
-      <p className="p-2">Sign in with Google to chat with your friends</p>
-      <button className="p-2">
-        <Image src={GoogleSignIn} alt="" onClick={googleSignIn}/>
-      </button>
+    <div className="relative">
+      <div className="text-center flex flex-col content-center">
+        <h2 className="p-2">Welcome to Next Chat</h2>
+        <img src="" alt="" />
+        <p className="p-2">Sign in with Google to chat with your friends</p>
+        <button className="p-2">
+          <Image
+            src={GoogleSignIn}
+            alt=""
+            onClick={googleSignIn}
+            className="m-auto"
+          />
+        </button>
+      </div>
     </div>
   );
 }

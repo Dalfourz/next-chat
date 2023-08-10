@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.chat__bubble--left {
+    flex:
+}
+
+.chat__bubble--right {
+    flex-direction: row-reverse;
+}
+
