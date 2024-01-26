@@ -9,12 +9,12 @@ import { GoogleAuthProvider, signInWithRedirect } from "firebase/auth";
 
 export default function NavBar() {
   const [user] = useAuthState(auth);
-  
+
   const googleSignIn = () => {
     const provider = new GoogleAuthProvider();
-    signInWithRedirect(auth, provider)
+    signInWithRedirect(auth, provider);
   };
-  
+
   const signOut = () => {
     auth.signOut();
   };

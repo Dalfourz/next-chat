@@ -23,6 +23,17 @@ export default function Welcome() {
             className="m-auto"
           />
         </button>
+        {/* ENABLE PASSWORD BASE AUTH LATER */}
+        {/* <div>
+          <p className="mb-2">Or enter your email address</p>
+          <form action="">
+            <label htmlFor="">Email Address </label>
+            <input className="bg-slate-200 mb-2" type="email" />
+            <br />
+            <label htmlFor="">Password </label>
+            <input className="bg-slate-200" type="password" />
+          </form>
+        </div> */}
       </div>
     </div>
   );
